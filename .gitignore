@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+npm-global/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+
+# Build artifacts
+.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+*.temp
+
+# Local Netlify folder
+.netlify
+DEVVIZ_DEMO_SERVER.js
+frontend/.angular/

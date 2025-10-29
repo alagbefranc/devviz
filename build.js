@@ -6,10 +6,8 @@ if (!fs.existsSync('dist')) {
   fs.mkdirSync('dist');
 }
 
-// Create Angular-like app structure
-if (!fs.existsSync('dist/devviz-frontend')) {
-  fs.mkdirSync('dist/devviz-frontend', { recursive: true });
-}
+// Create app structure in dist root
+// Files go directly into dist/ directory
 
 // Create a professional Angular-like app
 const html = `<!DOCTYPE html>
@@ -240,18 +238,18 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`;
 
-fs.writeFileSync(path.join('dist', 'devviz-frontend', 'index.html'), html);
+fs.writeFileSync(path.join('dist', 'index.html'), html);
 
 // Create assets directory and a simple CSS file
-if (!fs.existsSync('dist/devviz-frontend/assets')) {
-  fs.mkdirSync('dist/devviz-frontend/assets');
+if (!fs.existsSync('dist/assets')) {
+  fs.mkdirSync('dist/assets');
 }
 
-fs.writeFileSync(path.join('dist', 'devviz-frontend', 'assets', 'styles.css'), `
+fs.writeFileSync(path.join('dist', 'assets', 'styles.css'), `
 /* DevViz Platform Styles */
 /* This is a real deployed application! */
 `);
 
 console.log('✅ Built DevViz Platform - Real Angular-like Application');
-console.log('📦 Output: dist/devviz-frontend/');
+console.log('📦 Output: dist/');
 console.log('🌐 Ready for Netlify deployment!');

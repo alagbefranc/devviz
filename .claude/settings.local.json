@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Read(//d/nodejs18/**)",
+      "Bash(\"D:/nodejs18/npm.cmd\" --version)",
+      "Bash(./use_node18.bat:*)",
+      "Bash(set PATH=D:/nodejs18)",
+      "Bash(D:/nodejs18/node_modules/.bin)",
+      "Bash(%PATH%)",
+      "Bash(D:/nodejs18/node.exe:*)",
+      "Bash(export PATH=\"D:/nodejs18:$PATH\":*)",
+      "Bash(\"D:/nodejs18/npm.cmd\" cache clean --force)",
+      "Bash(\"D:/nodejs18/npm.cmd\" pkg set scripts.start=\"node server.js\")",
+      "Bash(git reset:*)",
+      "Bash(rm:*)",
+      "Bash(git push:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git rev-list:*)",
+      "Bash(npm run build:prod:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
